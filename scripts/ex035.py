@@ -6,7 +6,7 @@
 a = int(input('Reta 1: '))
 b = int(input('Reta 2: '))
 c = int(input('Reta 3: '))
-if ((b - c) < a < b + c) and ((a - c) < b < a + c) and ((a - b) < c < a + b):
-    print('{}, {}, e {} podem formar um triângulo!'.format(a,b,c))
+if a < b + c and b < a + c and c < a + b:
+    print('{}, {}, e {} podem formar um triângulo!'.format(a, b, c))
 else:
-    print('{}, {}, e {} NÃO formam um triângulo!'.format(a,b,c))
+    print('{}, {}, e {} NÃO formam um triângulo!'.format(a, b, c))
