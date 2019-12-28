@@ -3,15 +3,15 @@
 # 2 - octal
 # 3 - hexadecimal
 num = int(input('Informe um número inteiro: '))
-print('Código p/ conversão: ')
-print('1 - binario')
-print('2 - octal')
-print('3 - hexadecimal')
+print('''Código p/ conversão: 
+[1] converter para Binário
+[2] converter para Octal
+[3] converter para Hexadecimal''')
 op = int(input('Informe o código para converter: '))
 
 if op == 1:
     conversao = bin(num)
-    print('O número {} convertido para binário é: {}'.format(num, conversao[1:]))
+    print('O número {} convertido para binário é: {}'.format(num, conversao[2:]))
 elif op == 2:
     conversao = oct(num)
     print('O número {} convertido para octal é: {}'.format(num, conversao[2:]))
