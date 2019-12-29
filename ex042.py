@@ -8,12 +8,14 @@ r2 = int(input('Segundo lado: '))
 r3 = int(input('Terceiro lado: '))
 
 if r1 < r2 + r3 and r2 < r1 + r3 and r3 < r1 + r2:
-    if r1 == r2 and r1 == r3 and r2 == r3:
-        print('Este é um triangulo equilátero: ')
+    print('As retas acima podem formar um triangulo ', end='')
+    # if r1 == r2 and r1 == r3 and r2 == r3:
+    if r1 == r2 == r3:
+        print('equilátero')
     elif r1 != r2 and r1 != r3 and r2 != r3:
-        print('Este é um triangulo Escaleno: ')
+        print('escaleno')
     else:
-        print('Este é um triangulo Isósceles: ')
+        print('isósceles')
 else:
     print('Estas retas não formam um triangulo!')
 

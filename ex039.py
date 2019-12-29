@@ -3,11 +3,11 @@
 # Se é hora de se alistar
 # Se já passou o tempo de se alistar (quanto tempo passou)
 
-from datetime import datetime
+from datetime import date
 
 # vars
 ano = int(input('Informe o seu ano de nascimento: '))
-atual = datetime.today().year
+atual = date.today().year
 idade = atual - ano
 
 # logic
